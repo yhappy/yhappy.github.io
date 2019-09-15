@@ -359,6 +359,10 @@
 
     
   
+    
+  
+    
+  
 
   <script>
   (function() {
@@ -367,7 +371,7 @@
       script.src = '/lib/three/three.min.js';
       document.body.appendChild(script);
     });
-    let styles = ['/lib/three/three-waves.min.js', '', ''];
+    let styles = ['/lib/three/three-waves.min.js', '/lib/three/canvas_lines.min.js', '/lib/three/canvas_sphere.min.js'];
     window.addEventListener('load', () => {
       styles.forEach(item => {
         if (item !== '') {
