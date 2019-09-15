@@ -25,7 +25,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '7.4.0',
     exturl: false,
     sidebar: {"position":"right","Muse | Mist":320,"display":"post","offset":12,"onmobile":false},
@@ -166,8 +166,6 @@
   </li>
   </ul>
 
-    
-
 </nav>
 </div>
     </header>
@@ -182,6 +180,8 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+            
+
           <div id="content" class="content">
             
   <div id="posts" class="posts-expand">
@@ -365,9 +365,32 @@
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 <script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
-<script src="/js/schemes/muse.js?v=7.4.0"></script>
+<script src="/js/schemes/pisces.js?v=7.4.0"></script>
+
 <script src="/js/next-boot.js?v=7.4.0"></script>
 
+    
+  
+
+  <script>
+  (function() {
+    window.addEventListener('DOMContentLoaded', () => {
+      let script = document.createElement('script');
+      script.src = '/lib/three/three.min.js';
+      document.body.appendChild(script);
+    });
+    let styles = ['/lib/three/three-waves.min.js', '', ''];
+    window.addEventListener('load', () => {
+      styles.forEach(item => {
+        if (item !== '') {
+          let script = document.createElement('script');
+          script.src = item;
+          document.body.appendChild(script);
+        }
+      });
+    });
+  })();
+  </script>
 
 
   
